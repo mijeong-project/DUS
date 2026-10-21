@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>DUS | 메인</title>
+</head>
+
+<body class="home" data-page="home" data-auth="out">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="메뉴 열기/닫기">
+  <header class="hdr" id="hdr">
+    <label class="pill" for="nav-toggle" role="button">MENU</label>
+    <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+        onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+    <a class="pill auth-out" href="./login.html">LOGIN</a><a class="pill auth-in" href="./cart.html">CART</a>
+  </header>
+  <nav class="menu" id="menu" aria-label="전체 메뉴">
+    <div class="menu-in">
+      <div class="menu-top"><a class="menu-logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a><label
+          class="menu-x" for="nav-toggle" role="button" aria-label="메뉴 닫기"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3l18 18M21 3L3 21" />
+          </svg></label></div>
+      <ul class="menu-main">
+        <li><a href="./about.html">브랜드스토리<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./shop.html">전체상품<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./faq.html">문의하기<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+      </ul>
+      <ul class="menu-sub">
+        <li class="auth-out"><a href="./login.html">LOGIN</a></li>
+        <li class="auth-out"><a href="./signup.html">JOIN</a></li>
+        <li class="auth-in"><span class="who">김회원 님</span></li>
+        <li><a href="./cart.html">장바구니</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <img class="bg" src="./img/main_hero.png" alt="" onerror="this.remove()">
+      <h1 class="en"><span>EASILY</span><span>SPEEDY</span><span>PERFECTLY</span></h1>
+      <div class="scroll-hint"></div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap">
+        <div class="img ph" data-reveal="left"><img src="./img/main_01.png" alt="DUS 제품" onerror="this.remove()"></div>
+        <div class="intro-txt">
+          <svg class="circle" viewBox="0 0 150 150" aria-hidden="true">
+            <defs>
+              <path id="cp" d="M75,75 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0" />
+            </defs><text>
+              <textPath href="#cp">DUS DSU DUS DSU DUS DSU DUS DSU DUS DSU DUS DSU</textPath>
+            </text>
+          </svg>
+          <h2 data-reveal>DUS는 감추는 태도가 아닌,<br>정돈하는 태도를 제안합니다.</h2>
+          <p data-reveal style="--d:.15s">DUS는 두피를 자연스럽게 커버하는 동시에,<br>자극 없는 성분과 간편한 사용성을 통해<br>당신의 일상에 '정돈된 자신감'을 더합니다.
+          </p>
+          <p data-reveal style="--d:.3s">단순한 커버를 넘어, 두피 톤과 결을 매끄럽게 다듬는 새로운 루틴.<br>염색처럼 무겁지 않고, 분사처럼 빠르고 산뜻한<br>DUS의 솔루션을
+            만나보세요.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="wrap box">
+        <div data-reveal>
+          <h2>Gentle Blend Black<br>Fit Scalp Tattoo Mist</h2>
+          <p>스프레이 하나로 완성되는 두피 라인<br>탈모, 빈모, 이마 라인을<br>자연스럽게 메워주는 데일리 타투 미스트<br>무게감은 덜고, 자신감은 더했습니다.</p>
+          <a class="btn-line" href="shop.html">상품 구매하기 &gt;</a>
+        </div>
+        <div class="img ph" data-reveal="right"><img src="./img/main_02.png" alt="Gentle Blend 미스트"
+            onerror="this.remove()"></div>
+      </div>
+    </section>
+
+    <section class="event">
+      <div class="wrap">
+        <h2 data-reveal>EVENT</h2>
+        <div>
+          <ul>
+            <li data-reveal style="--d:.1s"><a href="#">
+                <div><small>2025.08.01</small><strong>브랜드 런칭 기념 5% 할인 쿠폰 증정</strong></div><svg viewBox="0 0 26 26">
+                  <path d="M3 13h20M15 5l8 8-8 8" />
+                </svg>
+              </a></li>
+            <li data-reveal style="--d:.2s"><a href="#">
+                <div><small>2025.08.01</small><strong>브랜드 런칭 기념 5% 할인 쿠폰 증정</strong></div><svg viewBox="0 0 26 26">
+                  <path d="M3 13h20M15 5l8 8-8 8" />
+                </svg>
+              </a></li>
+            <li data-reveal style="--d:.3s"><a href="#">
+                <div><small>2025.08.01</small><strong>브랜드 런칭 기념 5% 할인 쿠폰 증정</strong></div><svg viewBox="0 0 26 26">
+                  <path d="M3 13h20M15 5l8 8-8 8" />
+                </svg>
+              </a></li>
+          </ul>
+          <div class="more" data-reveal><a class="btn-line" href="#">더보기 &gt;</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="yt">
+      <h2 data-reveal>Youtube</h2>
+      <input class="yt-r" type="radio" name="yt" id="y1" checked><input class="yt-r" type="radio" name="yt"
+        id="y2"><input class="yt-r" type="radio" name="yt" id="y3"><input class="yt-r" type="radio" name="yt" id="y4">
+      <div class="yt-stage" data-reveal="zoom">
+        <div class="yt-nav"><label class="arrow p1" for="y4" aria-label="이전 영상"><svg viewBox="0 0 22 22">
+              <path d="M19 11H3M10 4l-7 7 7 7" />
+            </svg></label><label class="arrow p2" for="y1" aria-label="이전 영상"><svg viewBox="0 0 22 22">
+              <path d="M19 11H3M10 4l-7 7 7 7" />
+            </svg></label><label class="arrow p3" for="y2" aria-label="이전 영상"><svg viewBox="0 0 22 22">
+              <path d="M19 11H3M10 4l-7 7 7 7" />
+            </svg></label><label class="arrow p4" for="y3" aria-label="이전 영상"><svg viewBox="0 0 22 22">
+              <path d="M19 11H3M10 4l-7 7 7 7" />
+            </svg></label></div>
+        <div class="yt-view"><iframe class="s1" src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0"
+            title="Big Buck Bunny" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen
+            loading="lazy"></iframe><iframe class="s2" src="https://www.youtube.com/embed/eRsGyueVLvQ?rel=0"
+            title="Sintel" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen
+            loading="lazy"></iframe><iframe class="s3" src="https://www.youtube.com/embed/R6MlUcmOul8?rel=0"
+            title="Tears of Steel" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen
+            loading="lazy"></iframe><iframe class="s4" src="https://www.youtube.com/embed/TLkA0RELQ1g?rel=0"
+            title="Elephants Dream" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen
+            loading="lazy"></iframe></div>
+        <div class="yt-nav"><label class="arrow n1" for="y2" aria-label="다음 영상"><svg viewBox="0 0 22 22">
+              <path d="M3 11h16M12 4l7 7-7 7" />
+            </svg></label><label class="arrow n2" for="y3" aria-label="다음 영상"><svg viewBox="0 0 22 22">
+              <path d="M3 11h16M12 4l7 7-7 7" />
+            </svg></label><label class="arrow n3" for="y4" aria-label="다음 영상"><svg viewBox="0 0 22 22">
+              <path d="M3 11h16M12 4l7 7-7 7" />
+            </svg></label><label class="arrow n4" for="y1" aria-label="다음 영상"><svg viewBox="0 0 22 22">
+              <path d="M3 11h16M12 4l7 7-7 7" />
+            </svg></label></div>
+      </div>
+      <div class="dots"><label for="y1" aria-label="1번 영상"></label><label for="y2" aria-label="2번 영상"></label><label
+          for="y3" aria-label="3번 영상"></label><label for="y4" aria-label="4번 영상"></label></div>
+    </section>
+  </main>
+  <footer class="ftr">
+    <div class="ftr-top">
+      <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+      <div class="sns"><a href="#" aria-label="인스타그램"><svg viewBox="0 0 32 32">
+            <rect x="3" y="3" width="26" height="26" rx="7" />
+            <circle cx="16" cy="16" r="6" />
+            <circle cx="23.5" cy="8.5" r="1" fill="#fff" />
+          </svg></a><a href="#" aria-label="유튜브"><svg viewBox="0 0 32 32">
+            <rect x="2" y="6" width="28" height="20" rx="6" />
+            <path d="M13 12l7 4-7 4z" fill="#fff" />
+          </svg></a></div>
+    </div>
+    <div class="ftr-nav"><a href="./index.html">홈</a><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">쿠키설정</a>
+    </div>
+    <div class="ftr-info">
+      <span>상호명 : DUS</span><span>대표자 : 손호준</span><span>주소지 : 부산 광역시 서면로 00번길 00</span><span>사업자등록번호 :
+        1234-1234-1234</span>
+      <span>대표전화 : 051-111-1111</span><span>영업시간 : 10:00~18:00 (주말,공휴일 휴무)</span>
+    </div>
+  </footer>
+</body>
+
+</html>

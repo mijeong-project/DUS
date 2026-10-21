@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>DUS | 회사소개</title>
+</head>
+
+<body data-page="about" data-auth="out">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="메뉴 열기/닫기">
+  <header class="hdr" id="hdr">
+    <label class="pill" for="nav-toggle" role="button">MENU</label>
+    <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+        onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+    <span class="hdr-spacer"></span>
+  </header>
+  <nav class="menu" id="menu" aria-label="전체 메뉴">
+    <div class="menu-in">
+      <div class="menu-top"><a class="menu-logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a><label
+          class="menu-x" for="nav-toggle" role="button" aria-label="메뉴 닫기"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3l18 18M21 3L3 21" />
+          </svg></label></div>
+      <ul class="menu-main">
+        <li><a href="./about.html" class="on">브랜드스토리<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./shop.html">전체상품<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./faq.html">문의하기<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+      </ul>
+      <ul class="menu-sub">
+        <li class="auth-out"><a href="./login.html">LOGIN</a></li>
+        <li class="auth-out"><a href="./signup.html">JOIN</a></li>
+        <li class="auth-in"><span class="who">김회원 님</span></li>
+        <li><a href="./cart.html">장바구니</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="about-hero">
+      <div class="ph" data-parallax="0.25"><img src="./img/about_hero.png" alt="Gentle Blend" onerror="this.remove()">
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <div class="img ph" data-reveal="left"><img src="./img/about_01.png" alt="Gentle Blend 제품"
+            onerror="this.remove()"></div>
+        <div>
+          <small data-reveal>ABOUT</small>
+          <h2 data-reveal style="--d:.1s">모든 순간, 당당하게</h2>
+          <p data-reveal style="--d:.2s">DUS는 탈모 고민으로 힘들어하는 분들이 자신감을 되찾을 수 있도록<br>돕는 솔루션을 연구·개발하는 기업입니다.<br>대표님 스스로 오랜
+            기간 탈모로 인한 다양한 시술과 제품을 직접 경험하며<br>얻은 시행착오를 바탕으로,<br>단순히 빈 공간을 가리는 수준을 넘어 자연스러운 커버와<br>두피 건강까지 고려한 혁신 제품을 만들고
+            있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="value">
+      <img class="bg" src="./img/about_02.png" alt="" onerror="this.remove()">
+      <p class="sub" data-reveal>단순한 가림이 아닌, 자신감을 되찾는 방법을 연구합니다.</p>
+      <h2 data-reveal style="--d:.1s">우리가 만든 솔루션의 가치</h2>
+      <div class="cards">
+        <div class="card" tabindex="0" data-reveal style="--d:.1s"><em>01</em>
+          <h3>합리적인 비용</h3>
+          <p>미용실 두피커버 (1회 6~7만원)<br>대신 매일 부담없이!</p>
+        </div>
+        <div class="card" tabindex="0" data-reveal style="--d:.25s"><em>02</em>
+          <h3>자연스러운 퇴색</h3>
+          <p>껍질처럼 벗겨지지 않고, 머리를 감을 때 마다 자연스럽게 유지</p>
+        </div>
+        <div class="card" tabindex="0" data-reveal style="--d:.4s"><em>03</em>
+          <h3>실제 경험 기반 개발</h3>
+          <p>탈모 당사자의 고민에서 출발한 현실적인 솔루션</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <div class="head"><small data-reveal>PRODUCT</small>
+        <h2 data-reveal style="--d:.1s">일상을 바꾸는 디테일</h2>
+      </div>
+      <div class="wrap">
+        <div class="side" data-reveal="left"><small>PRODUCT</small>
+          <h3>일상을 바꾸는 디테일<br>네가지 핵심요소를<br>확인해보세요</h3>
+        </div>
+        <ul class="feat">
+          <li data-reveal><b>01</b>
+            <div>
+              <h4>즉각적인 커버 효과</h4>
+              <p>머리 빈 공간을 자연스럽게 메꿔 자신감 회복</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.1s"><b>02</b>
+            <div>
+              <h4>자연스러운 지속력</h4>
+              <p>뿌린 후 15분 자연 건조 &gt; 머리를 감을 때마다 부드럽게 빠져나가며 깔끔한 유지</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.2s"><b>03</b>
+            <div>
+              <h4>탈모 완화 성분 함유</h4>
+              <p>카페인, 판테놀, 멘톨, 바이오틴, 검은콩·흑미 등 천연 추출물로 두피 건강에 도움</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.3s"><b>04</b>
+            <div>
+              <h4>편리한 사용감</h4>
+              <p>별도의 시술이나 고비용 관리 없이, 집에서 누구나 손쉽게 스타일링</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="closing">
+      <img class="bg" src="./img/about_03.png" alt="" onerror="this.remove()">
+      <p data-reveal>젠틀블랜드는 단순히 '탈모를 가리는 제품'을 만드는 것이 아니라,<br>탈모인의 <b>삶의 질과 자신감을 회복시키는 파트너</b>가 되고자 합니다.</p>
+      <p data-reveal style="--d:.2s">앞으로도 고객의 목소리를 바탕으로 <b>더 안전하고 혁신적인 제품</b>을 개발하여,<br>탈모 케어 시장의 <b>새로운 표준</b>을 만들어
+        나가겠습니다.</p>
+    </section>
+  </main>
+  <footer class="ftr">
+    <div class="ftr-top">
+      <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+      <div class="sns"><a href="#" aria-label="인스타그램"><svg viewBox="0 0 32 32">
+            <rect x="3" y="3" width="26" height="26" rx="7" />
+            <circle cx="16" cy="16" r="6" />
+            <circle cx="23.5" cy="8.5" r="1" fill="#fff" />
+          </svg></a><a href="#" aria-label="유튜브"><svg viewBox="0 0 32 32">
+            <rect x="2" y="6" width="28" height="20" rx="6" />
+            <path d="M13 12l7 4-7 4z" fill="#fff" />
+          </svg></a></div>
+    </div>
+    <div class="ftr-nav"><a href="./index.html">홈</a><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">쿠키설정</a>
+    </div>
+    <div class="ftr-info">
+      <span>상호명 : DUS</span><span>대표자 : 손호준</span><span>주소지 : 부산 광역시 서면로 00번길 00</span><span>사업자등록번호 :
+        1234-1234-1234</span>
+      <span>대표전화 : 051-111-1111</span><span>영업시간 : 10:00~18:00 (주말,공휴일 휴무)</span>
+    </div>
+  </footer>
+</body>
+
+</html>

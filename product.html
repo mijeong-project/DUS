@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>DUS | 젠틀블랜드 두피커버미스트</title>
+</head>
+
+<body class="light" data-page="product" data-auth="out">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="메뉴 열기/닫기">
+  <header class="hdr" id="hdr">
+    <label class="pill" for="nav-toggle" role="button">MENU</label>
+    <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+        onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+    <span class="hdr-spacer"></span>
+  </header>
+  <nav class="menu" id="menu" aria-label="전체 메뉴">
+    <div class="menu-in">
+      <div class="menu-top"><a class="menu-logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a><label
+          class="menu-x" for="nav-toggle" role="button" aria-label="메뉴 닫기"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3l18 18M21 3L3 21" />
+          </svg></label></div>
+      <ul class="menu-main">
+        <li><a href="./about.html">브랜드스토리<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./shop.html" class="on">전체상품<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./faq.html">문의하기<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+      </ul>
+      <ul class="menu-sub">
+        <li class="auth-out"><a href="./login.html">LOGIN</a></li>
+        <li class="auth-out"><a href="./signup.html">JOIN</a></li>
+        <li class="auth-in"><span class="who">김회원 님</span></li>
+        <li><a href="./cart.html">장바구니</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="page-main pd">
+    <section class="pd-top">
+      <div class="pd-img ph" data-reveal="left"><img src="./img/main_02.png" alt="젠틀블랜드 두피커버미스트"
+          onerror="this.remove()"></div>
+      <div class="pd-info" data-reveal="right">
+        <small class="en">GentleBlend Scalp Cover Mist</small>
+        <h1>젠틀블랜드 두피커버미스트</h1>
+        <dl class="pd-meta">
+          <div>
+            <dt>판매가</dt>
+            <dd>10,000원 ~</dd>
+          </div>
+          <div>
+            <dt>배송비</dt>
+            <dd>2,500원</dd>
+          </div>
+        </dl>
+        <label class="t" for="opt">옵션 선택</label>
+        <select id="opt">
+          <option value="10000" data-size="60ml">60ml · 10,000원</option>
+          <option value="14000" data-size="100ml">100ml · 14,000원</option>
+        </select>
+        <div class="pd-row"><span id="optName">젠틀블랜드 두피커버미스트 60ml</span>
+          <div class="qty"><button type="button" data-q="-1" aria-label="수량 줄이기">-</button><input id="pdQty" type="text"
+              value="1" readonly aria-label="수량"><button type="button" data-q="1" aria-label="수량 늘리기">+</button></div><b
+            id="optPrice">10,000원</b>
+        </div>
+        <div class="pd-total"><span>총 상품금액</span><strong>₩ <span id="pdTotal">10,000</span> <small>(<span
+                id="pdCnt">1</span>개)</small></strong></div>
+        <div class="pd-btns"><a class="btn btn-wh" href="./cart.html">장바구니</a><a class="btn btn-bk"
+            href="./cart.html">바로구매</a></div>
+      </div>
+    </section>
+
+    <nav class="pd-tabs" aria-label="상품 정보"><a href="#detail">제품상세</a><a href="#info">상품구매안내</a><a href="#review">리뷰</a>
+    </nav>
+
+    <section id="detail" class="pd-detail">
+      <div class="video-ph">상품 사용 영상 삽입 예정입니다.</div>
+      <!-- 긴 상세 이미지: img/detail-01.jpg ~ detail-05.jpg 순서대로 위에서 아래로 이어 붙습니다 (더 필요하면 img 줄만 복사) -->
+      <div class="detail-imgs">
+        <div class="detail-empty">상세페이지 이미지 영역<br><small>img/detail-01.jpg 부터 넣어주세요</small></div>
+        <img src="./img/detail-01.png" alt="상세 이미지 1" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-02.png" alt="상세 이미지 2" loading="lazy" onerror="this.remove()"><img
+          src="./img/detail-03.png" alt="상세 이미지 3" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-04.png" alt="상세 이미지 4" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-05.png" alt="상세 이미지 5" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-06.png" alt="상세 이미지 6" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-07.png" alt="상세 이미지 7" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-08.png" alt="상세 이미지 8" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-09.png" alt="상세 이미지 9" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-10.png" alt="상세 이미지 10" loading="lazy" onerror="this.remove()">
+        <img src="./img/detail-11.png" alt="상세 이미지 11" loading="lazy" onerror="this.remove()">
+      </div>
+    </section>
+
+    <section id="info" class="pd-text">
+      <h2>상품구매안내</h2>
+      <dl>
+        <dt>배송</dt>
+        <dd>결제 완료 후 영업일 기준 1~3일 이내 출고됩니다. 배송비는 2,500원입니다. (샘플 문구 · 수정해서 사용하세요)</dd>
+        <dt>교환/반품</dt>
+        <dd>상품 수령 후 7일 이내 신청 가능하며, 사용한 제품은 교환/반품이 어렵습니다. (샘플 문구)</dd>
+        <dt>고객센터</dt>
+        <dd>소비자 상담실 070-7954-1673 / 영업시간 10:00~18:00 (주말, 공휴일 휴무)</dd>
+      </dl>
+    </section>
+
+    <section id="review" class="pd-text">
+      <h2>리뷰</h2>
+      <ul class="reviews">
+        <li>
+          <div class="stars">★★★★★ <span>tla******님</span></div>
+          <p>머리 심는 건 너무 비싸서 엄두도 못 내고, 커버용 제품만 계속 찾아봤어요. 탈모인들 불편한 거 정말 잘 아는 사람이 만든 느낌이에요. 커버도 자연스럽고 냄새도 인위적이지 않아요.</p>
+        </li>
+        <li>
+          <div class="stars">★★★★★ <span>wns******님</span></div>
+          <p>머리 감고 말려도 그대로고, 운동할 때도 전혀 안 번지더라구요. 한 번 뿌리면 이틀은 거뜬히 유지돼서 관리가 너무 편합니다.</p>
+        </li>
+        <li>
+          <div class="stars">★★★★★ <span>sub******님</span></div>
+          <p>예민한 두피라 뭐 하나 써도 따갑고 간지러워서 걱정했는데, 그런 게 전혀 없어요. 그냥 뿌리기만 하면 자연스럽게 커버돼요.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="ftr">
+    <div class="ftr-top">
+      <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+      <div class="sns"><a href="#" aria-label="인스타그램"><svg viewBox="0 0 32 32">
+            <rect x="3" y="3" width="26" height="26" rx="7" />
+            <circle cx="16" cy="16" r="6" />
+            <circle cx="23.5" cy="8.5" r="1" fill="#fff" />
+          </svg></a><a href="#" aria-label="유튜브"><svg viewBox="0 0 32 32">
+            <rect x="2" y="6" width="28" height="20" rx="6" />
+            <path d="M13 12l7 4-7 4z" fill="#fff" />
+          </svg></a></div>
+    </div>
+    <div class="ftr-nav"><a href="./index.html">홈</a><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">쿠키설정</a>
+    </div>
+    <div class="ftr-info">
+      <span>상호명 : DUS</span><span>대표자 : 손호준</span><span>주소지 : 부산 광역시 서면로 00번길 00</span><span>사업자등록번호 :
+        1234-1234-1234</span>
+      <span>대표전화 : 051-111-1111</span><span>영업시간 : 10:00~18:00 (주말,공휴일 휴무)</span>
+    </div>
+  </footer>
+  <script src="./js/shop.js"></script>
+</body>
+
+</html>

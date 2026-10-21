@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>DUS | 회원가입</title>
+</head>
+
+<body class="light" data-page="signup" data-auth="out">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="메뉴 열기/닫기">
+  <header class="hdr" id="hdr">
+    <label class="pill" for="nav-toggle" role="button">MENU</label>
+    <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+        onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+    <span class="hdr-spacer"></span>
+  </header>
+  <nav class="menu" id="menu" aria-label="전체 메뉴">
+    <div class="menu-in">
+      <div class="menu-top"><a class="menu-logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+            onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a><label
+          class="menu-x" for="nav-toggle" role="button" aria-label="메뉴 닫기"><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3l18 18M21 3L3 21" />
+          </svg></label></div>
+      <ul class="menu-main">
+        <li><a href="./about.html">브랜드스토리<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./shop.html">전체상품<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+        <li><a href="./faq.html">문의하기<svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3l9 9-9 9" />
+            </svg></a></li>
+      </ul>
+      <ul class="menu-sub">
+        <li class="auth-out"><a href="./login.html">LOGIN</a></li>
+        <li class="auth-out"><a href="./signup.html">JOIN</a></li>
+        <li class="auth-in"><span class="who">김회원 님</span></li>
+        <li><a href="./cart.html">장바구니</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="page-main">
+    <div class="auth">
+      <h1 data-reveal>회원가입</h1>
+      <form id="signupForm" action="#" method="post" data-reveal style="--d:.1s">
+        <div class="row"><label class="t" for="name">이름</label>
+          <div><input id="name" name="name" type="text" required placeholder="이름을 입력해 주세요." autocomplete="name"></div>
+        </div>
+        <div class="row"><label class="t" for="uid">아이디</label>
+          <div>
+            <div class="cols c2"><input id="uid" name="uid" type="text" required placeholder="아이디를 입력해 주세요."
+                autocomplete="username">
+              <select aria-label="이메일 도메인">
+                <option>@naver.com</option>
+                <option>@gmail.com</option>
+                <option>@daum.net</option>
+                <option>@kakao.com</option>
+                <option>@hanmail.net</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row"><label class="t" for="pw">비밀번호</label>
+          <div><input id="pw" name="pw" type="password" required minlength="8" placeholder="비밀번호를 입력해 주세요."
+              autocomplete="new-password"></div>
+        </div>
+        <div class="row"><label class="t" for="pw2">비밀번호확인</label>
+          <div><input id="pw2" name="pw2" type="password" required minlength="8" placeholder="비밀번호를 한번 더 입력해 주세요."
+              autocomplete="new-password"></div>
+        </div>
+        <div class="row"><span class="t">생년월일</span>
+          <div class="cols c3"><select id="yy" aria-label="년">
+              <option>1940년</option>
+              <option>1941년</option>
+              <option>1942년</option>
+              <option>1943년</option>
+              <option>1944년</option>
+              <option>1945년</option>
+              <option>1946년</option>
+              <option>1947년</option>
+              <option>1948년</option>
+              <option>1949년</option>
+              <option>1950년</option>
+              <option>1951년</option>
+              <option>1952년</option>
+              <option>1953년</option>
+              <option>1954년</option>
+              <option>1955년</option>
+              <option>1956년</option>
+              <option>1957년</option>
+              <option>1958년</option>
+              <option>1959년</option>
+              <option>1960년</option>
+              <option>1961년</option>
+              <option>1962년</option>
+              <option>1963년</option>
+              <option>1964년</option>
+              <option>1965년</option>
+              <option>1966년</option>
+              <option>1967년</option>
+              <option>1968년</option>
+              <option>1969년</option>
+              <option>1970년</option>
+              <option>1971년</option>
+              <option>1972년</option>
+              <option>1973년</option>
+              <option>1974년</option>
+              <option>1975년</option>
+              <option>1976년</option>
+              <option>1977년</option>
+              <option>1978년</option>
+              <option>1979년</option>
+              <option>1980년</option>
+              <option>1981년</option>
+              <option>1982년</option>
+              <option>1983년</option>
+              <option>1984년</option>
+              <option>1985년</option>
+              <option>1986년</option>
+              <option>1987년</option>
+              <option>1988년</option>
+              <option>1989년</option>
+              <option>1990년</option>
+              <option>1991년</option>
+              <option>1992년</option>
+              <option>1993년</option>
+              <option>1994년</option>
+              <option>1995년</option>
+              <option>1996년</option>
+              <option>1997년</option>
+              <option>1998년</option>
+              <option>1999년</option>
+              <option>2000년</option>
+              <option>2001년</option>
+              <option>2002년</option>
+              <option>2003년</option>
+              <option>2004년</option>
+              <option>2005년</option>
+              <option selected>2006년</option>
+              <option>2007년</option>
+              <option>2008년</option>
+              <option>2009년</option>
+              <option>2010년</option>
+              <option>2011년</option>
+              <option>2012년</option>
+              <option>2013년</option>
+              <option>2014년</option>
+              <option>2015년</option>
+              <option>2016년</option>
+              <option>2017년</option>
+              <option>2018년</option>
+              <option>2019년</option>
+              <option>2020년</option>
+              <option>2021년</option>
+              <option>2022년</option>
+              <option>2023년</option>
+              <option>2024년</option>
+              <option>2025년</option>
+              <option>2026년</option>
+            </select><select id="mm" aria-label="월">
+              <option selected>1월</option>
+              <option>2월</option>
+              <option>3월</option>
+              <option>4월</option>
+              <option>5월</option>
+              <option>6월</option>
+              <option>7월</option>
+              <option>8월</option>
+              <option>9월</option>
+              <option>10월</option>
+              <option>11월</option>
+              <option>12월</option>
+            </select><select id="dd" aria-label="일">
+              <option selected>1일</option>
+              <option>2일</option>
+              <option>3일</option>
+              <option>4일</option>
+              <option>5일</option>
+              <option>6일</option>
+              <option>7일</option>
+              <option>8일</option>
+              <option>9일</option>
+              <option>10일</option>
+              <option>11일</option>
+              <option>12일</option>
+              <option>13일</option>
+              <option>14일</option>
+              <option>15일</option>
+              <option>16일</option>
+              <option>17일</option>
+              <option>18일</option>
+              <option>19일</option>
+              <option>20일</option>
+              <option>21일</option>
+              <option>22일</option>
+              <option>23일</option>
+              <option>24일</option>
+              <option>25일</option>
+              <option>26일</option>
+              <option>27일</option>
+              <option>28일</option>
+              <option>29일</option>
+              <option>30일</option>
+              <option>31일</option>
+            </select></div>
+        </div>
+        <div class="row"><span class="t">휴대폰번호</span>
+          <div>
+            <div class="cols c3">
+              <select name="p1" aria-label="통신사 앞자리">
+                <option>010</option>
+                <option>011</option>
+                <option>016</option>
+                <option>017</option>
+                <option>019</option>
+              </select>
+              <input name="p2" type="tel" inputmode="numeric" required pattern="\d{3,4}" maxlength="4"
+                placeholder="0000" aria-label="가운데 번호"><input name="p3" type="tel" inputmode="numeric" required
+                pattern="\d{4}" maxlength="4" placeholder="0000" aria-label="끝 번호">
+            </div>
+          </div>
+        </div>
+        <div class="row"><span class="t">주소</span>
+          <div class="cols">
+            <div class="cols cz"><input id="zip" type="text" placeholder="우편번호를 입력해주세요." aria-label="우편번호"></div>
+            <input id="addr" type="text" placeholder="상세주소를 입력해주세요." aria-label="상세주소">
+          </div>
+        </div>
+
+        <label class="chk"><input type="checkbox" name="a1" checked required> [필수] 이용약관에 동의합니다.</label>
+        <div class="terms">제1조 목적<br>본 약관은 DUS(이하 '회사')가 제공하는 서비스 이용과 관련하여<br>회원과 회사 간의 권리, 의무, 책임사항을 규정함을 목적으로 합니다.
+        </div>
+        <label class="chk"><input type="checkbox" name="a2" required> [필수] 개인정보 수집 및 이용에 동의합니다.</label>
+        <div class="terms">회사는 회원가입 및 원활한 서비스 제공을 위해 다음과 같은 개인정보를 수집합니다.<br>- 필수항목: 이름, 아이디, 비밀번호, 휴대폰번호, 이메일<br>- 선택항목:
+          주소, 생년월일</div>
+
+        <div class="btns"><a class="btn btn-wh" href="./index.html">취소</a><button type="submit"
+            class="btn btn-bk">회원가입하기</button></div>
+      </form>
+    </div>
+  </main>
+  <footer class="ftr">
+    <div class="ftr-top">
+      <a class="logo" href="./index.html" aria-label="DUS 홈"><img src="./img/logo.png" alt=""
+          onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>DUS</span></a>
+      <div class="sns"><a href="#" aria-label="인스타그램"><svg viewBox="0 0 32 32">
+            <rect x="3" y="3" width="26" height="26" rx="7" />
+            <circle cx="16" cy="16" r="6" />
+            <circle cx="23.5" cy="8.5" r="1" fill="#fff" />
+          </svg></a><a href="#" aria-label="유튜브"><svg viewBox="0 0 32 32">
+            <rect x="2" y="6" width="28" height="20" rx="6" />
+            <path d="M13 12l7 4-7 4z" fill="#fff" />
+          </svg></a></div>
+    </div>
+    <div class="ftr-nav"><a href="./index.html">홈</a><a href="#">이용약관</a><a href="#">개인정보처리방침</a><a href="#">쿠키설정</a>
+    </div>
+    <div class="ftr-info">
+      <span>상호명 : DUS</span><span>대표자 : 손호준</span><span>주소지 : 부산 광역시 서면로 00번길 00</span><span>사업자등록번호 :
+        1234-1234-1234</span>
+      <span>대표전화 : 051-111-1111</span><span>영업시간 : 10:00~18:00 (주말,공휴일 휴무)</span>
+    </div>
+  </footer>
+</body>
+
+</html>
